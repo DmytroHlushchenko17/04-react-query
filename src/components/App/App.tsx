@@ -28,7 +28,7 @@ export default function App() {
       setError(false);
       setMovies([]);
 
-      const results = await fetchMovies(query);
+      const { results, total_pages } = await fetchMovies(query, 1);
 
       if (results.length === 0) {
         notify();
@@ -36,7 +36,7 @@ export default function App() {
       }
 
       setMovies(results);
-    } catch {
+           } catch {
       setError(true);
       toast.error("Error!!!");
     } finally {
