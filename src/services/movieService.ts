@@ -18,7 +18,7 @@ export const fetchMovies = async (
     params: {
       query,
       include_adult: false,
-      language: "en-US",
+      language: "ru-RU",
       page,
     },
     headers: {

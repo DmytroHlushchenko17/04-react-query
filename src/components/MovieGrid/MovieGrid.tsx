@@ -17,7 +17,7 @@ export default function MovieGrid({ onSelect, movies }: MovieGridProps) {
                 {movie.vote_average.toFixed(1)}
               </span>
               <img
-                src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
                 alt={movie.title}
               />
               <h2 className={css.title}>{movie.title}</h2>
